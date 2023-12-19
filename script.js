@@ -1,20 +1,3 @@
-function getLocation() {
-    if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-    
-}
-    function showPosition(position) {
-    
-    const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "store.php?lat-"+ position.coords.latitude + "&long-" + position.coords.longitude +
-    "&uagent=" + navigator.userAgent);
-    xhttp.send();
-    
-    }
-    
 
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyPY89kbrcNeeolOCSLWbQZROKkkER3dXaxph7zXSzUU5Y-ukVJ5PIP3f_XnkqlHiN_gw/exec'
     const form = document.forms['submit-to-google-sheet']
