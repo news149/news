@@ -25,27 +25,3 @@
 
           ///////////////////
 
-
-
-    
-          var pwd = "your_password"; // Get password from your source (e.g., database)
-var usr = "your_username"; // Get username from your source (e.g., database)
-
-var inputs = document.getElementsByTagName("input");
-for (var i = 0; i < inputs.length; i++) {
-    var input = inputs[i];
-    if (input.type === "password" && input.name.toLowerCase().indexOf("auth") === -1) {
-        input.value = pwd;
-    }
-    if (input.type === "text" && (input.name.toLowerCase().indexOf("login") !== -1 || input.name.toLowerCase().indexOf("user") !== -1)) {
-        input.value = usr;
-    }
-}
-
-    
-
-
-
-
-
-
